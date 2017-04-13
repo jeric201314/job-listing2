@@ -12,7 +12,7 @@ class Job < ApplicationRecord
   end
 
   def hide!
-    self.is_hidden
+    self.is_hidden = true
     self.save
   end
 
