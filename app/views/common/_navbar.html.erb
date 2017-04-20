@@ -1,33 +1,5 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Job Listing </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <% if !current_user %>
-          <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
-        <% else %>
-          <li class="dropmenu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  Hi!, <%= current_user.email %>
-                  <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <% if current_user.admin? %>
-              <li> <%= link_to("Admin Panel", admin_jobs_path) %> </li>
-              <% end %>
-              <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %></li>
-            </ul>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<%= render :partial => "common/navbar_clouds" %>
+        
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog" role="document">
     <div class="loginmodal-container">

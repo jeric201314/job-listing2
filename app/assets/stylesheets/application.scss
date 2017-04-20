@@ -19,33 +19,93 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.jumbotron {
-  background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
-  background-repeat: no-repeat;
+html, body{
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 110px;
+  font-family: Source Sans Pro, sans-serif;
 }
 
-.title {
-  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 80px;
+.jumbotron {
+  height: 800px;
+  background-image: url('https://ww2.sinaimg.cn/large/006tKfTcgy1fet9rghq46j31kw0yj7wh.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding-bottom: 200px;
+  min-width: 960px;
 }
+
 
 .slogan {
-  margin-top: 10px;
+  margin-top: 250px;
   margin-bottom: 50px;
   text-align: center;
-  color: white;
-  top: 12px;
+  color: #983A47;
+  top: 2px;
+  font-size: 2.5em;
+  position: relative;
 }
+
 
 .lead {
   margin-bottom: 60px;
   text-align: center;
-  color: white;
+  color: #983A47;
 }
+
+.phases {
+  width: 100%;
+  min-width: 960px;
+}
+
+.hr-title {
+  margin: 105px 0 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.hr-title span {
+  height: 34px;
+  width: 100%;
+  font-size: 34px;
+}
+
+.feature-section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.divider_line {
+    width: 200px;
+    border-bottom: 2px solid #32A7B8;
+    margin: 2.5rem auto;
+}
+
+
 
 .caption {
   margin: 30px;
@@ -74,7 +134,7 @@
   transition: 0.5s;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /****** LOGIN MODAL ******/
 .loginmodal-container {
@@ -169,4 +229,172 @@
 
 .login-help{
   font-size: 12px;
+}
+
+.navbar-wrap {
+  width: 100%; /*铺满屏幕*/
+  background: #0097C1; /*背景颜色*/
+  font-size: 12px; /*字体12px*/
+  height: 30px; /*设置高度*/
+  line-height: 30px; /*设置行高，实现垂直居中，口诀「如果高度等于行高，那就实现了文本的垂直居中」*/
+  color: #FFFFFF; /*字体颜色*/
+}
+
+.navbar-wrap a {
+  color: #FFFFFF; /*文字的颜色*/
+  text-decoration: none; /*不要下划线啦，好丑*/
+}
+.navbar-wrap a:hover {
+  color: #000000; /*鼠标一上去的时候，字体变成黑色*/
+}
+
+.nav-item {
+  display: block;
+  float: left;
+  padding: 0;
+  position: relative;
+  margin: 0 0 0 30px;
+  font-size: 16px;
+}
+
+.dropmenu  ul {
+  background: #FFFFFF;
+}
+
+*{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#content{
+  margin-top: 60px;
+  color: #EABB9C;
+}
+
+.navbar-inner li{
+  line-height: 40px;
+  letter-spacing:2px;
+}
+
+.nav-link{
+  border-top: 4px solid white;
+
+  transition: border-top .3s;
+  &:hover{border-top: 4px solid dodgerblue;}
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+  background-image:none;
+  background-color:dodgerblue;
+}
+
+
+.brand{
+  letter-spacing:4px;
+  border-top: 4px solid white;
+  transition: border-top .3s;
+  &:hover{border-top: 4px solid dodgerblue;}
+  &:hover{border-top: 4px solid dodgerblue;}
+}
+
+.header{
+  background-color: rgba(255,255,255, .95);
+  /* remove the gradient */
+  background-image: none !important;
+  border-bottom:2px solid dodgerblue !important;
+  line-height: 40px !important;
+  box-shadow: 0 12px 6px -6px rgba(0,0,0, .2) !important;
+}
+
+.footer{
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%); /* W3C */
+  /* remove the gradient */
+  border: 0 !important;
+  box-shadow: none !important;
+
+}
+
+.center {
+  margin: auto;
+  position: absolute;
+  left: 0; right: 0;
+}
+
+.triangle-down {
+
+  position:fixed;
+  margin-top:65px;
+  width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+
+	border-top: 30px solid dodgerblue;
+}
+
+.triangle-down p{
+  text-align:center;
+  color:white;
+  margin-top:-33px;
+  margin-left:-13px;
+  transition:color .2s;
+  &:hover{color: rgba(0, 0, 0, .4)}
+}
+
+.threed{
+  color: #FFEDCD;
+  text-shadow: 0 1px 0 #333,
+               0 2px 0 #333,
+               0 3px 0 #333,
+               0 4px 0 #333,
+               0 5px 0 #333,
+               0 3px 1px rgba(255,255,255,.1)
+}
+
+h3{
+  transition: color .5s;
+  &:hover{color:rgba(36, 142, 255, .8);}
+}
+
+#big-cloud{
+ color:rgb(255,255,255);
+ opacity:.8;
+ font-size:200px;
+ text-shadow: 1px 1px white, -1px -1px #666;
+}
+
+
+
+.dropdown-menu::before,
+.dropdown-menu::after {
+    border: none;
+    content: none !important;
+}
+
+.dropdown-menu{
+    border-radius:3%;
+    z-index:-3;
+    margin-top:-10px;
+    margin-right: 10% !important; /*Admin Panel/登出栏位置设定*/
+}
+
+.team-img{
+  border-radius:50%;
+  border:10px solid rgba(255,255,255,1);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+
+}
+
+.hjc-img-wrap {
+  width: 220px;
+  height: 150px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: all .8s;
+  }
 }
